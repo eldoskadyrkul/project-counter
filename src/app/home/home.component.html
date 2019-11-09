@@ -1,0 +1,61 @@
+<div class="main-content">
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col-xl-12 mb-5 mb-xl-0">
+        <div class="card bg-gradient-default shadow">
+          <div class="card-header bg-transparent">
+            <div class="row align-items-center">
+              <div class="col">
+                <h6 class="text-uppercase text-white ls-1 mb-1">Счетчик</h6>
+                <div class="card-body">
+                  <div class="chart">
+                    <div class="counter">
+                      <div class="count second">
+                        <div class="value"><span class="text-black">Count: {{ number }}</span></div>
+                      </div>
+                    </div>
+                    <!-- <button type="submit" (click)="Increase()" class="btn btn-primary">Increase</button> that button answered for +1 count -->
+                    <button class="btn btn-primary modal-toggle" style="float: right; margin: 0 auto" (click)="Increase()">Increment</button> <!-- this button answered for open modal popup -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-modal="trigger-1" class="modal">
+      <article class="content-wrapper">
+        <button class="close modal-toggle"></button>
+        <header class="modal-header">
+          <h2>Count modal</h2>
+        </header>
+        <div class="content">
+          <h1>{{ number }}</h1>
+        </div>
+        <footer class="modal-footer">
+          <button class="action" (click)="IncreaseTwice()">Increase</button>
+          <button class="action modal-toggle" (click)="AcceptEvent()">Accept</button>
+          <button class="action modal-toggle" (click)="CanceredEvents()">Decline</button>
+        </footer>
+      </article>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <footer class="footer">
+      <div class="row align-items-center justify-content-xl-between">
+        <div class="col-xl-6">
+          <div class="copyright text-center text-xl-left text-muted">&copy; 2019 <a href="http://eldoskadyrkul.kz/">Kadyrkul Templates</a></div>
+        </div>
+        <div class="col-xl-6">
+          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+            <li class="nav-item"><a class="nav-link" href="https://eldoskadyrkul.kz/" target="_blank">Kadyrkul Templates</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://eldoskadyrkul.kz/about" target="_blank">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://eldoskadyrkul.kz/blogs" target="_blank">Blogs</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+</div>
